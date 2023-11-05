@@ -552,11 +552,8 @@ body {
   background-color: #31d0aa;
 }
 
-.subscribe-footer-wrapper {
-  width: 453px;
-  height: 80px;
 
-}
+
 .subscribe-footer {
 font-size: 16px;
 font-weight: 500;
@@ -564,12 +561,12 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #FFFFFF;
 margin-bottom: 16px;
-
-
+margin-left: 80px;
 }
 
 .subscribe-footer-form {
   display: flex;
+  align-items: flex-end;
   gap: 24px;
 }
 
@@ -599,7 +596,6 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
 min-width: 165px; 
-  height: 40px;
   padding: 8px 24px;
   border: none;
   border-radius: 4px;
@@ -618,8 +614,6 @@ min-width: 165px;
 .subscribe-footer-btn-icon {
   fill: #FFFFFF;
   margin-left: 16px;
-
-
 }
 
 /*=================FOOTER==================*/
