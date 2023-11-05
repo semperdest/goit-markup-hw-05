@@ -849,9 +849,14 @@ min-width: 165px;
   background-color: #4d5ae5;
   margin-left: 95px;
   margin-right: 96px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-
+.review-form-btn:hover,
+.review-form-btn:focus {
+  background-color: #404BBF;
+  border: none;
+  fill: #ffffff;
+}
 
 
 /*===============REVIEW FORM STYLES================*/
