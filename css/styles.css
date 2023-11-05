@@ -95,10 +95,9 @@ body {
   gap: 40px;
 }
 
-
 .menu-link {
   display: block;
-  
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -114,7 +113,7 @@ body {
   color: #404bbf;
 }
 .menu-link-line {
-position: relative;
+  position: relative;
 }
 .menu-link-line::after {
   display: block;
@@ -269,7 +268,6 @@ position: relative;
   letter-spacing: 0.02em;
   color: #434455;
   width: 264px;
- 
 }
 .benefits-icon-container {
   display: flex;
@@ -289,7 +287,7 @@ position: relative;
 .team-section {
   padding-top: 120px;
   padding-bottom: 120px;
-  background: #F4F4FD;
+  background: #f4f4fd;
 }
 
 .team {
@@ -353,9 +351,8 @@ position: relative;
   margin-top: 8px;
 }
 .social-list-item {
-  
   column-gap: 24px;
-  
+
   width: 40px;
   height: 40px;
 }
@@ -363,7 +360,7 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-width: 100%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
@@ -372,7 +369,6 @@ width: 100%;
   padding-right: 12px;
   padding-bottom: 12px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .social-list-icon {
@@ -413,7 +409,6 @@ width: 100%;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
- 
 }
 .main-portfolio-title {
   text-align: center;
@@ -437,7 +432,6 @@ width: 100%;
 }
 
 .portfolio-list-text {
- 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -480,7 +474,6 @@ width: 100%;
 .footer-container {
   display: flex;
   align-items: baseline;
- 
 }
 .footer-logo-container {
   margin-right: 120px;
@@ -496,12 +489,10 @@ width: 100%;
   text-transform: uppercase;
   color: #4d5ae5;
   display: block;
- 
 }
 
 .footer-span-studio {
   color: #f4f4fd;
-  
 }
 
 .page-footer-text {
@@ -511,9 +502,7 @@ width: 100%;
   color: #f4f4fd;
   width: 264px;
   margin-top: 17.5px;
-  
 }
-
 
 .footer-media-title {
   font-size: 16px;
@@ -525,7 +514,6 @@ width: 100%;
   margin-left: 0;
 }
 
-
 .footer-social-list {
   display: flex;
   justify-content: center;
@@ -536,14 +524,12 @@ width: 100%;
   padding-bottom: 12px;
   width: 208px;
   gap: 16px;
- 
 }
 .footer-social-list-item {
   justify-content: center;
   text-align: center;
   width: 40px;
   height: 40px;
- 
 }
 .footer-social-list-link {
   display: flex;
@@ -566,6 +552,266 @@ width: 100%;
 
 .footer-social-list-link:hover,
 .footer-social-list-link:focus {
-  background-color: #31D0AA;
+  background-color: #31d0aa;
 }
+
+.subscribe-footer-wrapper {
+  width: 453px;
+  height: 80px;
+
+}
+.subscribe-footer {
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5; 
+letter-spacing: 0.02em;
+color: #FFFFFF;
+margin-bottom: 16px;
+}
+
+.subscribe-footer-form-input {
+  font-size: 12px;
+  line-height: 2; 
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.subscribe-footer-btn {
+display: inline-flex;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-top: 140px;
+  margin-left: 24px;
+  margin-right: 159px;
+  margin-bottom: 132px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+
+.subscribe-footer-btn:active,
+.subscribe-footer-btn:hover,
+.subscribe-footer-btn:focus {
+  background-color: #404bbf;
+}
+
+.subscribe-footer-btn-icon {
+  fill: #FFFFFF;
+  margin-left: 16px;
+
+
+}
+
 /*=================FOOTER==================*/
+
+/*=================BACKDROP STYLES==================*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+/*=================BACKDROP STYLES==================*/
+
+/*===============MODAL WINDOW STYLES================*/
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: #fcfcfc;
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: none;
+  width: 24px;
+  height: 24px;
+  line-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #404bbf;
+}
+
+.modal-close-btn-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close-btn-icon:hover,
+.modal-close-btn-icon:focus {
+  fill: #ffffff;
+}
+.review-form-description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+}
+/*===============MODAL WINDOW STYLES================*/
+
+/*===============REVIEW FORM STYLES================*/
+.review-form-field-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+.review-form-field-wrapper {
+  margin-bottom: 8px;
+}
+
+.review-form-input-wrapper {
+  position: relative;
+}
+
+.review-form-field {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  padding-left: 38px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-field:focus {
+  border-color: #4d5ae5;
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.review-form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-form-field:focus + .review-form-field-icon {
+  fill: #4d5ae5;
+}
+
+.review-form-field-message {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  resize: none;
+  padding: 8px 16px;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-field-message::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.review-form-field-message:focus {
+  outline-color: transparent;
+  outline-offset: 4px;
+  border-color: #4d5ae5;
+}
+
+.review-form-checkbox-wrapper {
+  margin-bottom: 24px;
+}
+
+.review-form-own-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  fill: transparent;
+  margin-right: 8px;
+  border-radius: 1px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+
+.review-form-checkbox-label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.privacy-policy-link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04;
+  text-decoration-line: underline;
+  color: #4d5ae5;
+}
+
+.review-form-checkbox:checked
+  + .review-form-checkbox-label
+  .review-form-own-checkbox {
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.review-form-btn {
+  display: inline-block;
+  width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: #4d5ae5;
+  margin-left: 95px;
+  margin-right: 96px;
+}
+
+/*===============REVIEW FORM STYLES================*/
